@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><a href="#Ej7"></a>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario Cocina</title>
+</head>
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/" method="post" enctype="multiple">
+	<fieldset> 
+		<legend>A cocinar</legend>
+		<label for="nombre">Nombre de la receta: </label>
+        <input name="nombre" id="nombre" type="text"><br>
+        <label for="correo">Email:</label>
+        <input name="correo" id="correo" type="email"><br>
+         <label for="momento">Momento:</label>
+        <input name="momento[]" type="checkbox" value="Desayuno"> Desayuno
+        <input name="momento[]" type="checkbox" value="Almuerzo"> Almuerzo
+        <input name="momento[]" type="checkbox" value="Merienda"> Merienda
+        <input name="momento[]" type="checkbox" value="Cena"> Cena
+        <input name="momento[]" type="checkbox" value="Postre"> Postre
+        <br><br>
+
+      <label for="ingredientes">Que ingrediente vas a usar: </label>  
+        <select multiple name="ingredientes[]" id="ingredientes">
+    <optgroup label="Frutas">
+        <option value="manzana">Manzana</option>
+        <option value="naranja">Naranja</option>
+        <option value="platano">Plátano</option>
+    </optgroup>
+    <optgroup label="Verduras">
+        <option value="zanahoria">Zanahoria</option>
+        <option value="brocoli">Brócoli</option>
+        <option value="espinaca">Espinaca</option>
+    </optgroup>
+        <optgroup label="Carnes">
+        <option value="cerdo">Cerdo</option>
+        <option value="ternera">Ternera</option>
+        <option value="pollo">Pollo</option>
+    </optgroup>
+    <optgroup label="Pescados">
+        <option value="caballa">Caballa</option>
+        <option value="choco">Choco</option>
+        <option value="salmon">Salmón</option>
+    </optgroup>
+</select>
+<br> </br>
+
+<label imput type="radio" id="horas" name="horas" value="horas"> Cuantas horas necesitas</label> <br> </br> 
+<input type="radio" id="horas" name="horas" value="0">
+<label for="horas">0 Horas</label><br>
+<input type="radio" id="horas" name="horas" value="1">
+<label for="horas">1 Hora</label><br>
+<input type="radio" id="horas" name="horas" value="2">
+<label for="horas">2 Horas</label>
+<br> </br> 
+
+<label imput type="radio" id="minutos" name="minutos" value="minutos"> Cuantas minutos necesitas</label> <br> </br> 
+<input type="radio" id="minutos" name="minutos" value="0">
+<label for="minutos">0 Minutos</label><br>
+<input type="radio" id="minutos" name="minutos" value="15">
+<label for="minutos">15 Minutos</label><br>
+<input type="radio" id="minutos" name="minutos" value="30">
+<label for="minutos">30 Minutos</label><br>
+<input type="radio" id="minutos" name="minutos" value="45">
+<label for="minutos">45 Minutos</label>
+
+<br> </br> 
+
+        <label for="foto">Introduce una imagen: </label>
+        <input type="file" name="foto" />
+	</fieldset>
+      <input type="submit" name="enviar" value="Enviar">
+</form>
+<p> <a href="index.html#index">Pulsa volver al index</a> </p>
+</body>
+</html>
