@@ -1,0 +1,23 @@
+body{
+	align-content: center;
+	padding: 5px;
+}
+nav a{
+color: #1717FF;
+}
+nav a:hover{
+   color:white;
+}
+
+nav{
+	padding: 10px;
+	border-color: black;
+	border:solid;
+	width: 97%;
+	background-color: red;
+	position:fixed; top:0
+}
+
+nav ul{
+	display: inline-table: ;
+}
