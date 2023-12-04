@@ -1,23 +1,76 @@
 body{
 	align-content: center;
 	padding: 5px;
+	background-color: paleturquoise;
 }
 nav a{
-color: #1717FF;
+	font-family: fantasy;
+	text-decoration: none;
+	color: #1717FF;
 }
 nav a:hover{
    color:white;
 }
 
 nav{
+	top: 0px;
 	padding: 10px;
 	border-color: black;
 	border:solid;
 	width: 97%;
-	background-color: red;
-	position:fixed; top:0
+	background-color: blue;
+	position:fixed; 
 }
 
 nav ul{
-	display: inline-table: ;
+	padding-left: 22%;
+}
+nav ul li{
+	border: solid;
+	border-color: indigo;
+	display:inline-flex;
+	padding: 2%;
+	background-color: paleturquoise;
+}
+nav ul li:hover {
+ 	background-color: indigo;
+}
+
+section{
+	padding-top: 8%;
+  float:left;
+  width: 50%;
+}
+@media(max-width: 600px){
+	section{
+	width: 100%;
+	display: block;
+}
+}
+
+@keyframes change-color{
+	0%{
+   color: red;
+	}
+	20%{
+	color: indigo;
+	}
+	40%{
+	color: yellowgreen;
+	}
+	60%{
+	color: black;
+	}
+	80%{
+	color: forestgreen;
+	}
+	100%{
+	color: white;
+	}
+}
+p{
+ animation-duration: 0.2s;
+  animation-name: change-color;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
